@@ -1,0 +1,23 @@
+{
+  "name": "react-store",
+  "version": "1.0.0",
+  "description": "store",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adolfo-G/react-store.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adolfo-G/react-store/issues"
+  },
+  "homepage": "https://github.com/Adolfo-G/react-store#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
