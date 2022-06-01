@@ -8,6 +8,8 @@
     "server": "nodemon server/index",
     "client": "npm start --prefix client",
     "develop": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node server/data/seeder",
+    "data:destroy": "node server/data/seeder -d",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,8 +24,10 @@
   "homepage": "https://github.com/Adolfo-G/react-store#readme",
   "dependencies": {
     "axios": "^0.27.2",
+    "bcryptjs": "^2.4.3",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
+    "express-async-handler": "^1.2.0",
     "mongoose": "^6.3.5"
   },
   "devDependencies": {
