@@ -5,6 +5,9 @@
   "main": "server/index.js",
   "scripts": {
     "start": "node server/index",
+    "server": "nodemon server/index",
+    "client": "npm start --prefix client",
+    "develop": "concurrently \"npm run server\" \"npm run client\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +21,13 @@
   },
   "homepage": "https://github.com/Adolfo-G/react-store#readme",
   "dependencies": {
-    "express": "^4.18.1"
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.5"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.1",
+    "nodemon": "^2.0.16"
   }
 }
